@@ -28,6 +28,39 @@ header {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+.header-logos {
+  display: flex;
+  justify-content: center;   /* centers both logos together */
+  align-items: center;
+  gap: 20px;                 /* space between logos */
+  padding: 10px 0;
+}
+
+#header-logo,
+#partner-logo {
+  height: auto;
+  max-width: 220px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#header-logo:hover,
+#partner-logo:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
+}
+
+/* Make both responsive on smaller screens */
+@media (max-width: 600px) {
+  #header-logo,
+  #partner-logo {
+    max-width: 140px;
+  }
+  .header-logos {
+    gap: 10px;
+  }
+}
+
 #header-logo:hover {
   transform: scale(1.08);
   filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
@@ -267,4 +300,5 @@ header {
   .booth-buttons button { width: 40px; height: 40px; font-size: 14px; }
   .back-btn { font-size: 13px; padding: 7px 16px; }
   .booth-info img { max-width: 160px; }
+
 }
