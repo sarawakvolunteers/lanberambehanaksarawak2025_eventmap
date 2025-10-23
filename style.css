@@ -239,7 +239,8 @@ header {
 
 /* Booth 4 — standard */
 .booth-info img[src*="booth4_treasures"] {
-  max-width: 260px !important;
+  max-width: 500px !important;
+  width: 100% !important;
 }
 
 /* Horizontal booths (5, 8, 9, 10) */
@@ -302,3 +303,4 @@ header {
   .booth-info img { max-width: 160px; }
 
 }
+
